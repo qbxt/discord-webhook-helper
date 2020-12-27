@@ -99,3 +99,13 @@ func executeWebhook(webhook *DWHWebhook, body *requestBody) []error {
 
 	return errs
 }
+
+func main() {
+
+	embeds := []*discordgo.MessageEmbed{
+		{
+			Title: "Hello, ",
+			Description: "world!",
+		},
+	}
+}
