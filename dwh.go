@@ -1,4 +1,4 @@
-package main
+package discord_webhook_helper
 
 import (
 	"fmt"
