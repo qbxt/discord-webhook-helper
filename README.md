@@ -37,3 +37,20 @@ func main() {
     _ = webhook.PostTextAndEmbeds("hello, world!", embeds)        
 }
 ```
+
+## Overrides
+You can override the IconURL and Name using the `discord-webhook-helper.CustomOverride` struct.
+
+```go
+func main() {
+
+    ...
+
+    webhook.Custom = &discord-webhook-helper.CustomOverride{
+        CustomName:    "Fred",
+        CustomIconURL: "cdn.example.com/freds-icon.png",
+    }
+
+    ...
+}
+```
